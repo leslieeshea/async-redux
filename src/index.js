@@ -11,6 +11,11 @@ const logger = store => next => action => {
   console.log('After reducer', store.getState());
 };
 
+const loggerTwo = store => next => action => {
+  console.log('I am another middleware!', action);
+  next(action);
+};
+
 function reducer(state = {}, action) {
   switch(action.type) {
     case 'HI':
@@ -22,7 +27,7 @@ function reducer(state = {}, action) {
 
 const store = createStore(
   reducer,
-  applyMiddleware(logger)
+  applyMiddleware(logger, loggerTwo)
 );
 
 store.dispatch({
