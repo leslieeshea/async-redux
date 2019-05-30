@@ -11,7 +11,7 @@ export default function reducer(state = initialState, action) {
     case FETCH_CHARACTERS_LOADING:
       return { ...state, loading: true };
     case FETCH_CHARACTERS:
-      return { ...state, error: null, loading: false };
+      return { ...state, error: null, loading: false, list: action.payload };
     case FETCH_CHARACTERS_ERROR:
       return { ...state, error: action.payload, loading: false };
     default:
