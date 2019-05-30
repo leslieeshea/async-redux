@@ -3,7 +3,7 @@
 exports[`Character component renders a character 1`] = `
 <section>
   <Link
-    to="/redux-avatar-promise/1"
+    to="/1"
   >
     <img
       src="/img"
