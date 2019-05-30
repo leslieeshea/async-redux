@@ -7,8 +7,8 @@ export default function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/redux-avatar-promise" component={AllCharacters} />
-        <Route path="/redux-avatar-promise/:id" component={CharacterById} />
+        <Route exact path="/" component={AllCharacters} />
+        <Route path="/:id" component={CharacterById} />
       </Switch>
     </Router>
   );
