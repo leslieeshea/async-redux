@@ -1,4 +1,4 @@
-import { FETCH_CHARACTER, FETCH_CHARACTER_LOADING } from '../actions/charactersActions';
+import { FETCH_CHARACTER, FETCH_CHARACTER_LOADING } from '../actions/characterDetailActions';
 
 const initialState = {
   character: null,

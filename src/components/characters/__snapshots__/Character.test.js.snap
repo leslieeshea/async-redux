@@ -2,11 +2,15 @@
 
 exports[`Character component renders a character 1`] = `
 <section>
-  <img
-    src="/img"
-  />
-  <p>
-    aang
-  </p>
+  <Link
+    to="/redux-avatar-promise/1"
+  >
+    <img
+      src="/img"
+    />
+    <p>
+      aang
+    </p>
+  </Link>
 </section>
 `;
