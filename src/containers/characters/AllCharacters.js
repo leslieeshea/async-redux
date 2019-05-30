@@ -18,6 +18,7 @@ class AllCharacters extends PureComponent {
   }
 
   render() {
+    // eslint-disable-next-line no-unused-vars
     const { characters, loading, error } = this.props;
     if(loading) return <h1>LOADING...</h1>;
     return <Characters characters={characters} />;
