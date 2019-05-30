@@ -1,5 +1,5 @@
 import reducer from './characterDetailReducer';
-import { FETCH_CHARACTER, FETCH_CHARACTER_LOADING } from '../actions/charactersActions';
+import { FETCH_CHARACTER } from '../actions/charactersActions';
 
 describe('Character Detail Reducer', () => {
   it('handles the fetch character action', () => {
