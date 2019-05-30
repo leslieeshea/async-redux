@@ -1,9 +1,9 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import CharacterDetail from '../../components/characters/CharacterDetail';
 import { getCharacter, getCharacterLoading } from '../../selectors/characterDetailSelector';
 import { fetchCharacter } from '../../actions/characterDetailActions';
-import CharacterDetail from '../../components/characters/CharacterDetail';
 
 class CharacterById extends PureComponent {
   static propTypes = {
@@ -24,7 +24,6 @@ class CharacterById extends PureComponent {
   render() {
     const { character, loading } = this.props;
     if(loading) return <h1>LOADING...</h1>;
-    
     return <CharacterDetail character={character} />;
   }
 }

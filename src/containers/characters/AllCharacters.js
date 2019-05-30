@@ -2,8 +2,8 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { getCharacters, getCharactersLoading, getCharactersError } from '../../selectors/charactersSelectors';
-import { fetchCharacters } from '../../actions/charactersActions';
 import Characters from '../../components/characters/Characters';
+import { fetchCharacters } from '../../actions/charactersActions';
 
 class AllCharacters extends PureComponent {
   static propTypes = {
