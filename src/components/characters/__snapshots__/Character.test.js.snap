@@ -2,7 +2,11 @@
 
 exports[`Character component renders a character 1`] = `
 <section>
-  <img />
-  <p />
+  <img
+    src="/img"
+  />
+  <p>
+    aang
+  </p>
 </section>
 `;
